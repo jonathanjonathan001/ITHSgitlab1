@@ -32,3 +32,12 @@ git switch main
 git log --oneline --graph --all
 (för att ta reda på hashvärdet för Add fix2.txt-committen)
 git cherry-pick 47cbb32
+
+____
+
+(antar att du vill att man ska commit:a steg 15.
+git add fix2.txt
+git commit -m "Add all commands up to step 14 to fix2.txt"
+
+git remote add origin https://github.com/jonathanjonathan001/ITHSgitlab1.git
+git push -u --all origin
