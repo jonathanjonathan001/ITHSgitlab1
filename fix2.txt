@@ -1,0 +1,34 @@
+git init
+git add README.md
+git commit -m "Initial commit"
+git switch -c feature1
+git add README.md
+git commit -m "Change animals"
+git switch main
+git add README.md
+git commit -m "Change to mahmut"
+git merge feature1
+(blir conflict, löser konflikten manuellt)
+git add README.md
+git commit -m "Merge and resolve conflict in README.md"
+
+git tag extinct -m "Extinct tag"
+(får "fatal: no tag message?" om jag försöker köra git tag extinct endast)
+
+git reset --hard HEAD~
+git branch feature2
+(fixar stor bokstav i djurnamnen)
+git add README.md
+git commit -m "Capitalize animal names"
+git switch feature2
+(skapar fix1.txt)
+git add fix1.txt
+git commit -m "Add fix1.txt"
+(skapar fix2.txt)
+git add fix2.txt
+git commit -m "Add fix2.txt"
+git switch main
+
+git log --oneline --graph --all
+(för att ta reda på hashvärdet för Add fix2.txt-committen)
+git cherry-pick 47cbb32
