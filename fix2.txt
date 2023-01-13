@@ -41,3 +41,36 @@ git commit -m "Add all commands up to step 14 to fix2.txt"
 
 git remote add origin https://github.com/jonathanjonathan001/ITHSgitlab1.git
 git push -u --all origin
+
+______
+
+git add fix2.txt
+git commit -m "Add additional info to fix2.txt"
+git push origin main
+
+git add .gitignore
+git commit -m "Add .gitignore"
+git push origin main
+
+git tag v1.0 -m "Version 1.0"
+
+(pusha tag:arna)
+git push origin extinct
+git push origin v1.0
+
+git rebase -i HEAD~2 
+
+git push --force origin main
+
+
+---
+git switch -c feature3
+(edit fix2.txt)
+git add fix2.txt
+git commit -m "Edit fix2.txt with step 18-19-20"
+git switch main
+git merge --no-ff feature3
+
+git push -u origin feature3
+git push origin main
+	
